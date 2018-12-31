@@ -4,7 +4,7 @@
       <div class="line-one">Hello,</div>
       <div class="line-two">I'm Jason</div>
       <br/>
-      <div class="line-three">Developer, Engineer,</div>
+      <div class="line-three">Developer, Creator,</div>
       <div class="line-four">{{selectedSkill}}.</div>
     </div>
     <div @click="handleNav" class="next-chevron"><chevronDoubleDown/></div>
@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      randomSkill: ['Friend', 'Gamer', 'Patriots fan', 'Dog lover', 'environmentalist'],
+      randomSkill: ['Friend', 'Gamer', 'Patriots fan', 'Dog lover', 'Environmentalist', 'Fitness enthusiast'],
       selectedSkill: ''
     }
   },
