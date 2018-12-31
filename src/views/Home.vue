@@ -4,20 +4,20 @@
       <div class="line-one">Hello,</div>
       <div class="line-two">I'm Jason</div>
       <br/>
-      <div class="line-three">Developer, Enginenner,</div>
+      <div class="line-three">Developer, Engineer,</div>
       <div class="line-four">{{selectedSkill}}.</div>
     </div>
+    <div @click="handleNav" class="next-chevron"><chevronDoubleDown/></div>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
+import chevronDoubleDown from 'vue-material-design-icons/ChevronDoubleDown.vue'
 export default {
   name: 'home',
   components: {
-    // HelloWorld
+    chevronDoubleDown
   },
   created(){
     this.selectedSkill = 'human'
@@ -32,6 +32,9 @@ export default {
     }
   },
   methods:{
+    handleNav(){
+      this.$router.push({ path: '/about' })
+    }
   },
   data() {
     return {
@@ -48,6 +51,8 @@ export default {
   height: 100%;
   background-color: #173753;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .text-wrapper{
   padding-top: 5%;
@@ -75,5 +80,11 @@ export default {
   margin-left: 15%;
   font-family: 'Playfair Display', serif;
   font-style: italic;
+}
+.next-chevron{
+  bottom: 5px;
+  align-self: center;
+  margin-top: 5%;
+  font-size: 4em;
 }
 </style>
