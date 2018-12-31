@@ -3,11 +3,13 @@
     <div id="nav">
       <router-link class="nav-btn nav-home" to="/"> <div>Home</div></router-link>
       <router-link class="nav-btn nav-about" to="/about"><div>About</div></router-link>
-      <router-link class="nav-btn nav-work" to=""><div>Work</div></router-link>
-      <router-link class="nav-btn nav-resume" to=""><div>Resume</div></router-link>
-      <router-link class="nav-btn nav-contact" to=""><div>Contact</div></router-link>
+      <router-link class="nav-btn nav-work" to="/work"><div>Work</div></router-link>
+      <router-link class="nav-btn nav-resume" to="/resume"><div>Resume</div></router-link>
+      <router-link class="nav-btn nav-contact" to="/contact"><div>Contact</div></router-link>
     </div>
-    <router-view/>
+    <transition name="router-anim" enter-active-class="animated flipInX" leave-active-class="animated flipOutX">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -19,13 +21,14 @@ export default {
   },
   data() {
       return {
-        mouseHome: false,
+        // mouseHome: false,
       }
     },
 }
 </script>
 
 <style>
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 html, body {height: 100%}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

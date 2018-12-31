@@ -1,14 +1,14 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="work">
+    <h1>This is an work page</h1>
   </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
-.about{
+.work{
   height: 100%;
-  background-color: #6DAEDB;
+  background-color: #2892D7;
   color: white;
   display: flex;
   flex-direction: column;

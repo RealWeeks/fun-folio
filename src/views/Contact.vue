@@ -1,14 +1,14 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="contact">
+    <h1>This is an contact page</h1>
   </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
-.about{
+.contact{
   height: 100%;
-  background-color: #6DAEDB;
+  background-color: #1D70A2;
   color: white;
   display: flex;
   flex-direction: column;
